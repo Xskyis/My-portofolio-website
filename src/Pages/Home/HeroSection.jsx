@@ -298,7 +298,7 @@ export default function HeroSection () {
         </div>
       </div>
       <div className='hero--section--img'>
-        <img src='./img/saly-cropped.png' alt='Hero Section' ref={imgRef} />
+        <img src='./img/Saly-cropped.png' alt='Hero Section' ref={imgRef} />
       </div>
     </section>
   )
