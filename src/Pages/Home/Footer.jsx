@@ -40,8 +40,8 @@ function Footer() {
   }, [])
 
   return (
-    <footer className="footer--container" id="footer" ref={footer}>
-      <div className="footer--link--container">
+    <footer className="footer--container" id="footer">
+      <div className="footer--link--container" ref={footer}>
         <div className="logo--footer">
           <img src="./img/logo.png" alt="N" />
         </div>

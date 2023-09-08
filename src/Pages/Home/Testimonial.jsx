@@ -20,7 +20,7 @@ export default function Testimonial() {
 
     gsap.fromTo(
       contents,
-      { x: -300, opacity: 0 },
+      { x: -200, opacity: 0 },
       {
         x: 0,
         opacity: 1,
