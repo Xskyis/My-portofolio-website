@@ -1,0 +1,87 @@
+{
+    "skills": [
+        {
+            "id": "1",
+            "src": "./img/frontend.png",
+            "title": "Front-End",
+            "description": [
+                {
+                    "desc" : "Slicing web design to responsive website using HTML & CSS." 
+                },
+                {
+                    "desc" : "Using React JS to build a website with single page application concept."
+                },
+                {
+                    "desc" : "Fetching data from API to display on the website."
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "src": "./img/backend.png",
+            "title": "Junior Back-End",
+            "description": [
+                {
+                    "desc" : "Using Node JS & Express JS to build a server."
+                },
+                {
+                    "desc" : "Create API to fetch data from database"
+                },
+                {
+                    "desc" : "Using MySQL to store data."
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "src": "./img/uiux.png",
+            "title": "UI/UX Design",
+            "description": [
+                {
+                    "desc": "Create UI design using Figma."
+                },
+                {
+                    "desc": "Explore the best color combination for the website"
+                },
+                {
+                    "desc": "Create prototype using Figma."
+                }
+            ]
+        }
+    ],
+
+    "portfolio": [
+        {
+            "id": "1",
+            "src": "./img/cuaca.png",
+            "title": "Weather App Lite",
+            "description": "Weather App Lite is a website that can show the weather in a city. This website is built using React JS and using OpenWeatherMap API to fetch the data.",
+            "link": "view In Github"
+        },
+        {
+            "id": "2",
+            "src": "./img/radiant-2.png",
+            "title": "Detroit Radiant",
+            "description": "Slicing web design From 99Design to responsive website using HTML & CSS.Detroit Radiant Products Company is the world's leader in the design.",
+            "link": "view In Github"
+        },
+        {
+            "id": "3",
+            "src": "./img/xr2.png",
+            "title": "Classroom 3D Model",
+            "description": "Clasrooms 3D Model is Made with Blender This is my third 3D model. I made this 3D model to remember my first classroom in SMK Telkom Malang.",
+            "link": "view In Drive"
+        }
+    ],
+    "testimonial": [
+      {
+        "id": "1",
+        "src": "./img/illiyin.png",
+        "type": "Internship",
+        "waktu": "November 2023 - April 2024",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+        "author_name": "Illiyin Studio",
+        "author_designation": "As Front-End Developer"
+      }
+    ]
+}
