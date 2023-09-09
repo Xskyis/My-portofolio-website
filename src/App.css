@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: "Roboto", sans-serif;
   -moz-osx-font-smoothing: "Roboto", sans-serif;
   font-style: normal;
+
 }
 h1,
 h2,
@@ -301,7 +302,8 @@ h2 {
   height: 320px;
 }
 .skills--section--card:hover {
-  border-bottom: 4px solid var(--primary);
+  box-shadow: rgba(10, 10, 168, 0.2) 0px 2px 8px 0px;
+  transition: 0.2s;
 }
 .skills--section--card:hover .skills--section--description {
   color: var(--darkblue);
@@ -347,7 +349,7 @@ h2 {
 /* About Us */
 .about--section {
   display: grid;
-  padding: 133.3px 85.3px;
+  padding: 100.3px 85.3px;
   align-items: center;
   gap: 114.6px;
   grid-template-columns: repeat(2, 1fr);
@@ -396,7 +398,7 @@ h2 {
 .portfolio--section--img > img {
   width: 100%;
   max-height: 300px;
-  border-radius: 12px 12px 0 0;
+  border-radius: 12px 12px 0px 0px;
 }
 .portfolio--section--card {
   display: flex;

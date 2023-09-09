@@ -20,7 +20,7 @@ export default function MySkills(){
     
         gsap.fromTo(
           Sk,
-          { x: -200, opacity: 0 },
+          { x: -50, opacity: 0 },
             {
             x: 0,
             opacity: 1,

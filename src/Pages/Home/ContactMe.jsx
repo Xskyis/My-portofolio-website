@@ -19,11 +19,12 @@ export default function ContactMe() {
 
         gsap.fromTo(
             contents,
-            { y: 300, opacity: 0 },
+            { y: 50, opacity: 0 },
             {
             y: 0,
             opacity: 1,
-            duration: 1.2,
+            duration: 1.3,
+            delay: 1,
             position: 'static',
             zIndex: 'auto',
             onComplete: onCompleteAnimation,

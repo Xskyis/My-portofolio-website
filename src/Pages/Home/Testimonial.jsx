@@ -20,11 +20,12 @@ export default function Testimonial() {
 
     gsap.fromTo(
       contents,
-      { x: -200, opacity: 0 },
+      { x: -50, opacity: 0 },
       {
         x: 0,
         opacity: 1,
-        duration: 1.2,
+        duration: 1.5,
+        delay: 0.2,
         position: "static",
         zIndex: "auto",
         onComplete: onCompleteAnimation,

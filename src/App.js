@@ -8,10 +8,10 @@ import Headroom from 'react-headroom';
 function App() {
   return (
     <div className="App">
-      <Router>
         <Headroom>
           <Navbar />
         </Headroom>
+      <Router>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

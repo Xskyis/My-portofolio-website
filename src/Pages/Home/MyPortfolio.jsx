@@ -2,6 +2,7 @@ import data from '../../data/index.json'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useRef, useEffect } from 'react'
+gsap.registerPlugin(ScrollTrigger)
 
 export default function MyPortfolio () {
   const Portref = useRef(null)
@@ -19,7 +20,7 @@ export default function MyPortfolio () {
 
     gsap.fromTo(
       Port,
-      { x: 300, opacity: 0 },
+      { x: 50, opacity: 0 },
       {
         x: 0,
         opacity: 1,

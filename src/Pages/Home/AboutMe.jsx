@@ -20,7 +20,7 @@ export default function AboutMe() {
     
         gsap.fromTo(
           image,
-          { x: -200, opacity: 0 },
+          { x: -50, opacity: 0 },
             {
             x: 0,
             opacity: 1,
@@ -52,11 +52,11 @@ export default function AboutMe() {
 
             gsap.fromTo(
                 contents,
-                { x: 200, opacity: 0 },
+                { x: 50, opacity: 0 },
                 {
                 x: 0,
                 opacity: 1,
-                duration: 1.1,
+                duration: 1,
                 position: 'static',
                 zIndex: 'auto',
                 onComplete: onCompleteAnimation,
@@ -72,11 +72,11 @@ export default function AboutMe() {
         
     return (
         <section id="AboutMe" className="about--section">   
-            <div className="about--section--img">
-                <img src="./img/gw.png" alt="" ref={img}/>
+            <div className="about--section--img" ref={img}>
+                <img src="./img/gw.png" alt="gw"/>
             </div>
-            <div className="hero--section--content--box--about--section--box">
-                <div className="hero--section--content" ref={content}>
+            <div className="hero--section--content--box--about--section--box" ref={content}>
+                <div className="hero--section--content">
                     <p className="section--title">
                         Hi! 👋  My Name is Achmad Nabil Afgareza
                     </p>
