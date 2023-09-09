@@ -24,15 +24,15 @@ export default function Testimonial() {
       {
         x: 0,
         opacity: 1,
-        duration: 1,
-        delay: 0.2,
+        duration: 0.7,
+        delay: 0.1,
         position: "static",
         zIndex: "auto",
         onComplete: onCompleteAnimation,
         scrollTrigger: {
           id: "testimonial",
           trigger: contents,
-          start: "top 35%",
+          start: "top 40%",
           toggleActions: "play none none none",
           markers: false,
         },

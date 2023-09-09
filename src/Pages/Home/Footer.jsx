@@ -25,7 +25,7 @@ function Footer() {
       {
       y: 0,
       opacity: 1,
-      duration: 1.8,
+      duration: 1.6,
       delay: 0.2,
       position: 'static',
       zIndex: 'auto',
@@ -33,7 +33,7 @@ function Footer() {
       scrollTrigger: {
           id: 'footer',
           trigger: footers,
-          start: 'top 45%',
+          start: 'top 50%',
           toggleActions: 'play none none none',
           markers: false
       }
@@ -43,7 +43,7 @@ function Footer() {
 
   return (
     <footer className="footer--container" id="footer">
-      <div className="footer--link--container" ref={footer}>
+      <div className="footer--link--container">
         <div className="logo--footer">
           <img src="./img/logo.png" alt="N" />
         </div>
@@ -162,7 +162,7 @@ function Footer() {
           </div>
       </div>
       <hr className="divider" />
-      <div className="footer--content--container">
+      <div className="footer--content--container" ref={footer}>
         <p className="footer--content">Made With 💖 By nabilfgrza_</p>
         <div className="footer--social--icon">
           <ul>

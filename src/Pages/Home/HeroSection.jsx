@@ -25,7 +25,7 @@ export default function HeroSection () {
       {
         x: 0,
         opacity: 1,
-        duration: 1.3,
+        duration: 0.8,
         onComplete: onCompleteAnimation,
         scrollTrigger: {
           id: 'HeroSection',
@@ -55,7 +55,7 @@ export default function HeroSection () {
       {
         x: 0,
         opacity: 1,
-        duration: 1.3,
+        duration: 0.8,
         onComplete: onCompleteAnimation,
         scrollTrigger: {
           id: 'HeroSection',

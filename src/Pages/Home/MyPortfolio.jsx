@@ -24,7 +24,7 @@ export default function MyPortfolio () {
       {
         x: 0,
         opacity: 1,
-        duration: 1,
+        duration: 0.7,
         position: 'static',
         zIndex: 'auto',
         onComplete: onCompleteAnimation,

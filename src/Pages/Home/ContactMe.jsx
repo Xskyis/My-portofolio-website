@@ -23,15 +23,15 @@ export default function ContactMe() {
             {
             y: 0,
             opacity: 1,
-            duration: 1,
-            delay: 0.4,
+            duration: 0.5,
+            delay: 0.2,
             position: 'static',
             zIndex: 'auto',
             onComplete: onCompleteAnimation,
             scrollTrigger: {
                 id: 'Contact',
                 trigger: contents,
-                start: 'top 40%',
+                start: 'top 32%',
                 toggleActions: 'play none none none',
                 markers: false
             }
