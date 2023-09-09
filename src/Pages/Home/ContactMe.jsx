@@ -29,7 +29,7 @@ export default function ContactMe() {
             zIndex: 'auto',
             onComplete: onCompleteAnimation,
             scrollTrigger: {
-                id: 'ContactMe',
+                id: 'Contact',
                 trigger: contents,
                 start: 'top 40%',
                 toggleActions: 'play none none none',

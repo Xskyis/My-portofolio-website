@@ -33,7 +33,7 @@ function Footer() {
       scrollTrigger: {
           id: 'footer',
           trigger: footers,
-          start: 'top 30%',
+          start: 'top 45%',
           toggleActions: 'play none none none',
           markers: false
       }

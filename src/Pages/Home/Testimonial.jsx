@@ -32,7 +32,7 @@ export default function Testimonial() {
         scrollTrigger: {
           id: "testimonial",
           trigger: contents,
-          start: "top 25%",
+          start: "top 35%",
           toggleActions: "play none none none",
           markers: false,
         },
