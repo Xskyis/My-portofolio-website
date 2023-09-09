@@ -63,6 +63,7 @@ export default function AboutMe() {
                 scrollTrigger: {
                     id: 'AboutMe',
                     trigger: image,
+                    start: 'top 80%',
                     toggleActions: "play none none none",
                     markers: false
                 }

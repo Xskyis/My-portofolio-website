@@ -24,7 +24,7 @@ export default function Testimonial() {
       {
         x: 0,
         opacity: 1,
-        duration: 1.5,
+        duration: 1,
         delay: 0.2,
         position: "static",
         zIndex: "auto",
@@ -32,6 +32,7 @@ export default function Testimonial() {
         scrollTrigger: {
           id: "testimonial",
           trigger: contents,
+          start: "top 25%",
           toggleActions: "play none none none",
           markers: false,
         },

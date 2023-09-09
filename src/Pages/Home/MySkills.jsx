@@ -31,6 +31,7 @@ export default function MySkills(){
             scrollTrigger: {
                 id: 'mySkills',
                 trigger: Sk,
+                start: 'top 80%',
                 toggleActions: 'play none none none',
                 markers: false
             }

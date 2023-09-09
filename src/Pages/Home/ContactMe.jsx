@@ -23,14 +23,15 @@ export default function ContactMe() {
             {
             y: 0,
             opacity: 1,
-            duration: 1.3,
-            delay: 1,
+            duration: 1,
+            delay: 0.4,
             position: 'static',
             zIndex: 'auto',
             onComplete: onCompleteAnimation,
             scrollTrigger: {
                 id: 'ContactMe',
                 trigger: contents,
+                start: 'top 40%',
                 toggleActions: 'play none none none',
                 markers: false
             }
@@ -39,7 +40,7 @@ export default function ContactMe() {
     }, [])
 
     return (
-      <section id="Contact" className="contact--section" ref={contact}>
+      <section id="Contact" className="contact--section">
         <div>
           <p className="sub--title">Get In Touch</p>
           <h2>Contact Me</h2>
@@ -47,7 +48,7 @@ export default function ContactMe() {
            For any inquiries, Or just to say hello, get in touch with me.
           </p>
         </div>
-        <form className="contact--form--container">
+        <form className="contact--form--container" ref={contact}>
           <div className="container">
             <label htmlFor="first-name" className="contact--label">
               <span className="text-md">First Name</span>

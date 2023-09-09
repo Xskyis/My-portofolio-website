@@ -26,13 +26,14 @@ function Footer() {
       y: 0,
       opacity: 1,
       duration: 1.8,
-      delay: 0.5,
+      delay: 0.2,
       position: 'static',
       zIndex: 'auto',
       onComplete: onCompleteAnimation,
       scrollTrigger: {
           id: 'footer',
           trigger: footers,
+          start: 'top 30%',
           toggleActions: 'play none none none',
           markers: false
       }

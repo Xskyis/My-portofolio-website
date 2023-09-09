@@ -31,6 +31,7 @@ export default function MyPortfolio () {
         scrollTrigger: {
           id: 'MyPortfolio',
           trigger: Port,
+          start: 'top 60%',
           toggleActions: 'play none none none',
           markers: false
         }
