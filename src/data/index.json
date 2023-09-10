@@ -2,7 +2,7 @@
     "skills": [
         {
             "id": "1",
-            "src": "./img/frontend.png",
+            "src": "./img/frontend-optimized.png",
             "title": "Front-End",
             "description": [
                 {
@@ -18,7 +18,7 @@
         },
         {
             "id": "2",
-            "src": "./img/backend.png",
+            "src": "./img/backend-optimized.png",
             "title": "Junior Back-End",
             "description": [
                 {
@@ -34,7 +34,7 @@
         },
         {
             "id": "3",
-            "src": "./img/uiux.png",
+            "src": "./img/uiux-optimized.png",
             "title": "UI/UX Design",
             "description": [
                 {
