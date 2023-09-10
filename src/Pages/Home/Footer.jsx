@@ -25,7 +25,7 @@ function Footer() {
       {
       y: 0,
       opacity: 1,
-      duration: 1.6,
+      duration: 1.5,
       delay: 0.2,
       position: 'static',
       zIndex: 'auto',
@@ -33,7 +33,7 @@ function Footer() {
       scrollTrigger: {
           id: 'footer',
           trigger: footers,
-          start: 'top 50%',
+          start: 'top 80%',
           toggleActions: 'play none none none',
           markers: false
       }
