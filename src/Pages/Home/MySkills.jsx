@@ -24,14 +24,14 @@ export default function MySkills(){
             {
             x: 0,
             opacity: 1,
-            duration: 0.8,
+            duration: 0.9,
             position: 'static',
             zIndex: 'auto',
             onComplete: onCompleteAnimation,
             scrollTrigger: {
                 id: 'mySkills',
                 trigger: Sk,
-                start: 'top 80%',
+                start: 'top 90%',
                 toggleActions: 'play none none none',
                 markers: false
             }

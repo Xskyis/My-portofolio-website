@@ -25,8 +25,8 @@ function Footer() {
       {
       y: 0,
       opacity: 1,
-      duration: 1.5,
-      delay: 0.2,
+      duration: 1.3,
+      delay: 0.1,
       position: 'static',
       zIndex: 'auto',
       onComplete: onCompleteAnimation,
@@ -173,8 +173,7 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="Copyright"
-                className="text-sm"
+                className="text-sm copyright"
               >
                 © 2023 Achmad Nabil Afgareza, All rights reserved.
               </Link>
