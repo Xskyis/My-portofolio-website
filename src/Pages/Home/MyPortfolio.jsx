@@ -4,6 +4,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useRef, useEffect } from 'react'
 gsap.registerPlugin(ScrollTrigger)
 
+//import tilt from 'tilt.js'
+import Tilt from 'react-parallax-tilt'
+
 export default function MyPortfolio () {
   const Portref = useRef(null)
 
@@ -83,6 +86,17 @@ export default function MyPortfolio () {
       </div>
       <div className='portfolio--section--container' ref={Portref}>
         {data?.portfolio?.map((item, index) => (
+          <Tilt className='parallax-effect' 
+                perspective={1500} 
+                gyroscope={true}
+                tiltReverse={true}
+                transitionSpeed={2000}
+                gyroscopeReverse={true}
+                glareEnable={true}
+                glareMaxOpacity={0.45}
+                xMax={15}
+                yMax={15}
+          >
           <div key={index} className='portfolio--section--card'>
             <div className='portfolio--section--img'>
               <img src={item.src} alt='Placeholder' />
@@ -112,6 +126,7 @@ export default function MyPortfolio () {
               </p>
             </div>
           </div>
+          </Tilt>
         ))}
       </div>
     </section>

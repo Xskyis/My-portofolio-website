@@ -4,6 +4,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
+//import tilt from 'tilt.js'
+import Tilt from "react-parallax-tilt";
+
 export default function Testimonial() {
   const testimonial = useRef(null);
 
@@ -25,7 +28,7 @@ export default function Testimonial() {
         x: 0,
         opacity: 1,
         duration: 0.7,
-        delay: 0.1,
+        delay: 0.2,
         position: "static",
         zIndex: "auto",
         onComplete: onCompleteAnimation,

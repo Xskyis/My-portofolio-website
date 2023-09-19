@@ -6,7 +6,6 @@ body {
   -webkit-font-smoothing: "Roboto", sans-serif;
   -moz-osx-font-smoothing: "Roboto", sans-serif;
   font-style: normal;
-
 }
 h1,
 h2,
@@ -300,12 +299,13 @@ h2 {
   border-radius: 10.6px;
   background: var(--bg-shade);
   height: 320px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
 }
 .skills--section--card:hover {
-  box-shadow: rgba(10, 10, 168, 0.2) 0px 2px 8px 0px;
-  transition: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0) 0px 5px 10px;
+  transition: 0.3s;
 }
-.skills--section--card:hover .skills--section--description {
+.skills--section--card:hover .skills--section--card--description {
   color: var(--darkblue);
 }
 .skills--section--img {
@@ -337,19 +337,15 @@ h2 {
   font-weight: 700;
   line-height: 45px;
 }
-.skills--section--description {
+.skills--section--card--description > ul {
   color: var(--black);
-  font-size: 21.3px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
 }
 /* Skills Style Ends */
 
 /* About Us */
 .about--section {
   display: grid;
-  padding: 100.3px 85.3px;
+  padding: 70.3px 85.3px;
   align-items: center;
   gap: 114.6px;
   grid-template-columns: repeat(2, 1fr);
@@ -358,8 +354,8 @@ h2 {
   width: 70%;
   height: 70%;
   border-radius: 10%;
-  border:4px solid var(--primary);
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border:3.5px solid var(--primary);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 /* About Us Ends */
@@ -673,7 +669,11 @@ svg:hover {
 
 @media only screen and (max-width: 1200px) {
   .navbar {
-    padding: 12px 30px;
+    padding: 12px 35px;
+  }
+
+  #hero-id {
+    display: none;
   }
 
   .btn-outline-primary {
@@ -732,6 +732,7 @@ svg:hover {
     padding-top: 0;
     padding-bottom: 0;
   }
+
   .skills-section-heading{
     text-align: center;
   }
@@ -766,6 +767,11 @@ svg:hover {
   .copyright {
     text-align: center;
   }
+
+  .skills--section--card {
+    height: 480px;
+  }
+
 }
 
 /* Hamburger menu  */
@@ -806,7 +812,7 @@ svg:hover {
   }
 
   .hero--section {
-    padding: 1.333px 85.333px 85.333px;
+    padding: 10.333px 110.333px 130.333px;
   }
 
   .navbar--items {

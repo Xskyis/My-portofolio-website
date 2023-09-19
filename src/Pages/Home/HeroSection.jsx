@@ -2,68 +2,79 @@ import gsap from 'gsap'
 import { useRef, useEffect } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
+import { motion } from 'framer-motion'
+
+
 
 export default function HeroSection () {
-  const imgRef = useRef(null)
-  const content = useRef(null)
+  // const imgRef = useRef(null)
+  // const content = useRef(null)
   
 
-  useEffect(() => {
-    const hero = imgRef.current
+  // useEffect(() => {
+  //   const hero = imgRef.current
 
-    const onCompleteAnimation = () => {
-      // Setelah animasi selesai, atur properti CSS kembali ke nilai semula
-      gsap.set(hero, { x: 0, opacity: 1, position: 'static', zIndex: 'auto' })
-    }
+  //   const onCompleteAnimation = () => {
+  //     // Setelah animasi selesai, atur properti CSS kembali ke nilai semula
+  //     gsap.set(hero, { x: 0, opacity: 1, position: 'static', zIndex: 'auto' })
+  //   }
 
-    // Hentikan animasi sebelumnya jika ada
-    gsap.killTweensOf(hero)
+  //   // Hentikan animasi sebelumnya jika ada
+  //   gsap.killTweensOf(hero)
 
-    gsap.fromTo(
-      hero,
-      { x: 50, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 0.8,
-        onComplete: onCompleteAnimation
-      }
-    )
-  }, [])
+  //   gsap.fromTo(
+  //     hero,
+  //     { x: 50, opacity: 0 },
+  //     {
+  //       x: 0,
+  //       opacity: 1,
+  //       duration: 0.8,
+  //       onComplete: onCompleteAnimation
+  //     }
+  //   )
+  // }, [])
 
-  useEffect(() => {
-    const contents = content.current
+  // useEffect(() => {
+  //   const contents = content.current
 
-    const onCompleteAnimation = () => {
-      // Setelah animasi selesai, atur properti CSS kembali ke nilai semula
-      gsap.set(contents, { x: 0, opacity: 1, position: 'static', zIndex: 'auto' })
+  //   const onCompleteAnimation = () => {
+  //     // Setelah animasi selesai, atur properti CSS kembali ke nilai semula
+  //     gsap.set(contents, { x: 0, opacity: 1, position: 'static', zIndex: 'auto' })
 
-    }
+  //   }
 
-    // Hentikan animasi sebelumnya jika ada
-    gsap.killTweensOf(contents)
+  //   // Hentikan animasi sebelumnya jika ada
+  //   gsap.killTweensOf(contents)
 
-    gsap.fromTo(
-      contents,
-      { x: -50, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 0.85,
-        onComplete: onCompleteAnimation,
-        scrollTrigger: {
-          id: 'HeroSection',
-          trigger: contents,
-          toggleActions: 'play none none none',
-          markers: false
-        }
-      }
-    )
-  }, [])  
+  //   gsap.fromTo(
+  //     contents,
+  //     { x: -50, opacity: 0 },
+  //     {
+  //       x: 0,
+  //       opacity: 1,
+  //       duration: 0.85,
+  //       onComplete: onCompleteAnimation,
+  //       scrollTrigger: {
+  //         id: 'HeroSection',
+  //         trigger: contents,
+  //         toggleActions: 'play none none none',
+  //         markers: false
+  //       }
+  //     }
+  //   )
+  // }, [])  
 
   return (
     <section id='heroSection' className='hero--section'>
-      <div className='hero--section--content--box' ref={content}>
+      <motion.div className='hero--section--content--box'
+        variants={{
+          hidden: { opacity: 0 , y: 50   },
+          visible: { opacity: 1, y: 0 }
+        }}
+        initial='hidden'
+        animate='visible'
+        transition={{ type: "spring" ,duration: 1.2, delay: 0.25 }}
+      >
         <div className='hero--section--content'>
           <p className='section--title'>
             Hi Everyone, I'm Nabil <span className='wave'>👋</span>
@@ -184,10 +195,18 @@ export default function HeroSection () {
             </a>
           </div>
         </div>
-      </div>
-      <div className='hero--section--img'>
-        <img src='./img/Saly-cropped-optimized.png' alt='Hero Section' ref={imgRef} />
-      </div>
+      </motion.div>
+      <motion.div className='hero--section--img'
+        variants={{
+          hidden: { opacity: 0, x: 20 },
+          visible: { opacity: 1, x: 0},
+        }}
+        initial='hidden'
+        animate='visible'
+        transition={{ duration: 0.5, delay: 0.2, ease: 'easeInOut' }}
+      >
+        <img src='./img/Saly-cropped-optimized.png' alt='Hero Section' id='hero-id'/>
+      </motion.div>
     </section>
   )
 }
