@@ -52,7 +52,7 @@ export default function MySkills () {
       <div className='skills--section--container' ref={Skillref}>
         {data?.skills?.map((item, index) => (
           <Tilt className='parallax-effect' 
-                perspective={1500} 
+                perspective={5000} 
                 gyroscope={true}
                 tiltReverse={true}
                 transitionSpeed={2000}
@@ -60,6 +60,7 @@ export default function MySkills () {
                 glareEnable={true}
                 glareMaxOpacity={0.45}
                 xMax={15}
+                yMax={15}
             >
             <div key={index} className='skills--section--card'>
               <div className='skills--section--img'>

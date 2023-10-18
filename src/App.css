@@ -186,7 +186,7 @@ h2 {
 }
 
 .nav-logo > img {
-  width: 65px;
+  width: 68px;
   height: 50px;
   -webkit-user-drag : none;
 }
@@ -671,11 +671,9 @@ svg:hover {
   .navbar {
     padding: 12px 35px;
   }
-
   #hero-id {
     display: none;
   }
-
   .btn-outline-primary {
     display: none;
   }
@@ -684,7 +682,6 @@ svg:hover {
     flex-direction: column-reverse;
     padding-bottom: 70px;
   }
-
   .hero--section--img {
     display: flex;
     padding-top: 50px;
@@ -812,7 +809,7 @@ svg:hover {
   }
 
   .hero--section {
-    padding: 10.333px 110.333px 130.333px;
+    padding: 1.333px 100.333px 130.333px;
   }
 
   .navbar--items {

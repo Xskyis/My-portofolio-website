@@ -175,7 +175,7 @@ function Footer() {
                 duration={500}
                 className="text-sm copyright"
               >
-                © 2023 Achmad Nabil Afgareza, All rights reserved.
+                © 2023 Achmad Nabil Afgareza
               </Link>
             </li>
           </ul>
