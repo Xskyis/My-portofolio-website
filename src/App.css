@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
+
 /* Global CSS */
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: "Roboto", sans-serif;
-  -moz-osx-font-smoothing: "Roboto", sans-serif;
+  font-family: "Outfit", sans-serif;
+  -webkit-font-smoothing: "Outfit", sans-serif;
+  -moz-osx-font-smoothing: "Outfit", sans-serif;
   font-style: normal;
 }
 h1,
@@ -135,7 +137,7 @@ h2 {
   font-size: 21px;
   text-align: center;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 32px;
   display: flex;
   align-items: flex-start;
@@ -241,7 +243,7 @@ h2 {
 .hero--section--title {
   color: var(--heading-color);
   font-size: 74.667px;
-  font-weight: 700;
+  font-weight: bolder;
   line-height: 90px;
   align-self: stretch;
 }
@@ -250,7 +252,7 @@ h2 {
 }
 .hero--section-description {
   color: var(--darkblue);
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 400;
   line-height: 36px;
 }
@@ -807,11 +809,9 @@ svg:hover {
     height: 100%;
     padding-bottom: 15px;
   }
-
   .hero--section {
     padding: 1.333px 100.333px 130.333px;
   }
-
   .navbar--items {
     position: absolute;
     display: flex;
@@ -854,5 +854,4 @@ svg:hover {
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
 }
-
 /* Responsive Screens Ends*/
